@@ -1,1 +1,69 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link href= "styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Teaven Tedros Lab 4</title>
+  
+</head>
+<body>
+<div class = "container">
+    <h1>Teaven Tedros Lab 4</h1>
+<form action= "/api" method="post">
+    
+    <ul class="flex-outer">
+        <li>
+            <label for= "fname">First Name</label>
+            <input name= "fname" type= "text" id= "fname" placeholder= "Enter your first name here" maxlength= "140">
+        </li>
+        
+        <li>
+            <label for= "lname">Last Name</label>
+            <input name= "lname" type= "text" id= "lname" placeholder= "Enter your last name here" maxlength= "140">
+        </li>
+
+        <li>
+            <label for= "email-address">Email Address</label>
+            <input name= "email-address" type= "email" id= "email-address" placeholder= "Enter your email address here">
+        </li>
+
+        <li>
+            <label for= "phone-number">Phone Number</label>
+            <input name= "fname" type= "tel" id= "phone-number" placeholder= "Enter your phone number here">
+        </li>
+
+        <li>
+            <label for= "message">Message</label>
+            <textarea rows= "5" cols= "33" name= "message" id= "message" placeholder="Enter your message here" ></textarea>
+        </li>
+
+        <li>
+            <p>Age</p>
+            <ul class= "flex-inner">
+            <li>
+                <input name= "checkbox" type="checkbox" id= "eighteen-to-thirtyfive">
+                <label for= "eighteen-to-thirtyfive">18-35</label>
+            </li>
+
+            <li>
+                <input name= "checkbox" type="checkbox" id= "thirtyfive-to-fifty">
+                <label for= "thirtyfive-to-fifty">35-50</label>
+            </li>
+            
+            <li>
+                <input name= "checkbox" type="checkbox" id= "fifty-to-sixtyfive">
+                <label for= "fifty-to-sixtyfive">50-65</label>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <button name= "button" id= "submit" type="submit">Submit</button>
+    </li>
+
+
+    </ul>
+</form>
+</body>
+
